@@ -1,0 +1,102 @@
+body {
+    display: block;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* MAIN WIREFRAME BORDERS */
+.border1 {
+    border: 1px solid blueviolet;
+}
+
+.border2 {
+    border: 1px solid red;
+}
+/* ***************************** */
+
+/* TOP CONTAINER */
+header:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    padding: 44px 0px 50px;
+}
+
+/* SECOND CONTAINER */
+section:nth-of-type(1) {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    background-image: url(./images/the-beacon.jpeg);
+    background-size: cover;
+    /* COME BACK TO FIX IMAGE SIZING ISSUE */
+}
+
+/* THIRD CONTAINER */
+section:nth-of-type(2) {
+    width: 100%;
+    height: 250px;
+}
+
+/* FOURTH CONTAINER */
+footer:nth-of-type(1) {
+    width: 100%;
+    height: 125px;
+}
+
+/* LOGO */
+header div {
+    width: 340px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NAV BAR */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* NAV BAR CONTENTS */
+header nav ul a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li:nth-of-type(1) a {
+    color: aqua;
+}
+
+/* MAIN CENTRAL TEXT */
+section:nth-of-type(1) div.mainText {
+    border: 1px solid red;
+    width: fit-content;
+    height: 200px;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section:nth-of-type(1) div.mainText p:nth-of-type(1){
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+section:nth-of-type(1) div.mainText p{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
