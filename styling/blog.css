@@ -53,15 +53,19 @@ section:nth-of-type(1) {
 
 section:nth-of-type(1) div:nth-of-type(1) {
     background-color: #252525;
-    width: 140px;
-    height: 45px;
-    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-items: center;
 }
 
 section:nth-of-type(1) div:nth-of-type(1) h1 {
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* THIRD CONTAINER WITH IMAGES AND TEXT */

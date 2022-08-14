@@ -53,14 +53,19 @@ section:nth-of-type(1) {
 
 section:nth-of-type(1) div:nth-of-type(1) {
     background-color: #252525;
-    width: 185px;
-    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-items: center;
 }
 
 section:nth-of-type(1) div:nth-of-type(1) h1 {
     color: white;
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* THIRD CONTAINER FOR 9x9 IMAGES */
@@ -74,7 +79,9 @@ section:nth-of-type(2) div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 100%;
+    width: 725px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section:nth-of-type(2) div a {
@@ -83,7 +90,7 @@ section:nth-of-type(2) div a {
 }
 
 section:nth-of-type(2) div a img {
-    border: 2px solid #1a1a1a;
+    border: 1.5px solid #1a1a1a;
     opacity: 0.75;
     transition: 0.5s ease-in-out;
 }

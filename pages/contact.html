@@ -10,10 +10,65 @@
 </head>
 <body>
     <div class="mainContainer">
-        <header class="column1"></header>
-        <section class="column2"></section>
-        <form action="" class="column1"></form>
-        <footer class="column2"></footer>
+        <header>
+            <div class="imageLogo">
+                <img src="../images/logo.jpeg" alt="Mustache Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div>
+                <h1>Let's Keep In Touch</h1>
+            </div>
+        </section>
+        <form action="results.html">
+            <div class="nameInput">
+                <input type="text" name="nameInputField" id="nameInputField" placeholder="Name" required>
+            </div>
+            <div class="addressInput">
+                <input type="text" name="addressInputField" id="addressInputField" placeholder="Address" required>
+            </div>
+            <div class="emailInput">
+                <input type="email" name="emailInputField" id="emailInputField" placeholder="Email" required>
+            </div>
+            <div class="phoneInput">
+                <input type="tel" name="telInputField" id="telInputField" placeholder="Phone Number" required>
+            </div>
+            <div class="messageInput">
+                <textarea name="messageBox" id="messageInputField" rows="4" cols="50" placeholder="Message" maxlength="500" minlength="10" required></textarea>
+            </div>
+            <div class="buttonConfirm">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        <footer>
+            <div>
+                <p>© 2023 by Mustacchio. All rights reserved.</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/bootsnipp">
+                    <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+                </a>
+                <a href="https://twitter.com/bootsnipp">
+                    <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+                </a>
+                <a href="https://plus.google.com/+Bootsnipp-page">
+                    <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+                </a>
+                <a href="mailto:#">
+                    <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+                </a>
+            </div>  
+        </footer>
+        <script src="scripts.js"></script>
     </div>
 </body>
 </html>
