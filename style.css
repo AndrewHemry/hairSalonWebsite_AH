@@ -43,6 +43,10 @@ header nav ul li a:hover {
     color: #0ba39c;
 }
 
+header nav ul li:nth-of-type(1) {
+    color: #0ba39c;
+}
+
 /* SECOND CONTAINER */
 section:nth-of-type(1) {
     height: 350px;
@@ -132,7 +136,6 @@ section:nth-of-type(2) ul li a p{
 footer {
     width: 100%;
     height: 85px;
-    border: 2px solid green;
     display: grid;
     grid-template-columns: 1.25fr 0.50fr 1.25fr;
     align-content: center;
@@ -155,5 +158,60 @@ footer div:nth-of-type(2) {
 }
 
 .fa {
-    border: 1px solid green;
+    color: white;
+}
+
+.fa:hover {
+    color: #525151;
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: white;
+    }    
+
+    /* START OF THE BURGER MENU */
+    
+    .hamburger {
+        display: block;
+        color: black;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        /* left: -100%;
+        top: 70px; */
+        gap: 0;
+        flex-direction: column;
+        width: 25%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    header nav ul li {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* HIDING ITEMS HERE */
+    section:nth-of-type(1) img {
+        display: none;
+    }
+
+    section:nth-of-type(1) div.mainText {
+        display: none;
+    }
 }
