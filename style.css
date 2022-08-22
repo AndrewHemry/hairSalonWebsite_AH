@@ -171,6 +171,15 @@ footer div:nth-of-type(2) {
     }    
 
     /* START OF THE BURGER MENU */
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        background-color: #1a1a1a;
+    }
     
     .hamburger {
         display: block;
@@ -189,10 +198,10 @@ footer div:nth-of-type(2) {
 
     .nav-menu {
         position: fixed;
-        /* left: -100%;
-        top: 70px; */
+        left: -100%;
         gap: 0;
         flex-direction: column;
+        align-items: center;
         width: 25%;
         text-align: center;
         transition: 0.3s;
@@ -213,5 +222,9 @@ footer div:nth-of-type(2) {
 
     section:nth-of-type(1) div.mainText {
         display: none;
+    }
+
+    section:nth-of-type(2) {
+        flex-wrap: wrap;
     }
 }
